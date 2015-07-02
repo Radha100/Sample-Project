@@ -3,11 +3,12 @@
 <head>
   <title>ASample</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "default" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<%= link_to "Yummy icecreams", root_path %><br/>
+	<%= link_to "Icecreams are delicious", about_path %>
 <%= yield %>
 
 </body>
